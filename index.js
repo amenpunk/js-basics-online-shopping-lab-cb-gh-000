@@ -60,6 +60,7 @@ for( var i = 1; i < cart.length; i++){
      var nuevo = cart.splice(i, 1);
      return nuevo;
    }
+}
    else{
     return "That item is not in your cart.";
    }
