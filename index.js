@@ -63,7 +63,7 @@ function removeFromCart(item) {
      var nuevo = cart.splice(i, 1);
      return nuevo;
    }
-  
+
 }
 
 }
