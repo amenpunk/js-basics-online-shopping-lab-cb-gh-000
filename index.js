@@ -12,7 +12,6 @@ function setCart(c) {
 function addToCart(item) {
     var min = 1;
     var max = 100;
-
     cart[item] = Math.round(Math.random() * (max - min) + min);
 }
 
