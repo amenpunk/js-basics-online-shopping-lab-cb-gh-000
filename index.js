@@ -24,7 +24,7 @@ function viewCart() {
   if (!cart.length) {
     return "Your shopping cart is empty.";
   } else {
-    
+
     let items = "";
     let lastString = `In your cart, you have`;
     for (let i = 0; i < cart.length; i++) {
@@ -37,7 +37,7 @@ function viewCart() {
       } else {
         lastString = `${lastString} ${currentItem} at $${currentPrice},`;
       }
-} 
+}
 items = lastString;
 return items;
 }
