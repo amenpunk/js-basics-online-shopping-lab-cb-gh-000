@@ -23,9 +23,15 @@ function viewCart() {
     return "Your shopping cart is empty.";
    }
    else{
+        let items = "";
+        let lastString = `In your cart, you have`;
        for (var i in cart){
            let currentItem = cart[i].itemName;
            let currentPrice = cart[i].itemPrice;
+
+            if(i = 1){
+  
+            }
        }
    }
 
