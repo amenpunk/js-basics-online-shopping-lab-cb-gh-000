@@ -36,7 +36,7 @@ function viewCart() {
       } else {
         lastString = `${lastString} ${currentItem} at $${currentPrice},`;
       }
-} 
+}
 items = lastString;
 return items;
 }
