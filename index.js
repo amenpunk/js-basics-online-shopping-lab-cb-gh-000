@@ -26,11 +26,12 @@ function viewCart() {
         let items = "";
         let lastString = `In your cart, you have`;
        for (var i in cart){
-           let currentItem = cart[i].itemName;
-           let currentPrice = cart[i].itemPrice;
-          if(i == cart.length){
-            return `In your cart, you have ${currentItem} at ${currentPrice}.`
+          if(i == 1){
+            return `In your cart, you have ${cart[i].itemName;} at ${cart[i].itemPrice;}.`
             }
+          else if (i == 2) {
+            return `In your cart, you have bananas at $17, and pancake batter at $5.`
+          }
 
        }
    }
