@@ -28,8 +28,7 @@ function viewCart() {
        for (var i in cart){
            let currentItem = cart[i].itemName;
            let currentPrice = cart[i].itemPrice;
-
-            if (i === cart.length -1) {
+          if (i === cart.length -1) {
         lastString = `${lastString} ${currentItem} at $${currentPrice}.`;
       } else if (i === cart.length -2) {
         lastString = `${lastString} ${currentItem} at $${currentPrice}, and`;
@@ -39,8 +38,9 @@ function viewCart() {
 }
 items = lastString;
 return items;
-}
-       }
+
+
+      
    }
 
 
