@@ -23,8 +23,6 @@ function viewCart() {
     return "Your shopping cart is empty.";
    }
    else{
-        let items = "";
-        let lastString = `In your cart, you have`;
        for (var i in cart){
           if(i == 0){
             return `In your cart, you have ${cart[i].itemName} at ${cart[i].itemPrice}.`
