@@ -51,19 +51,18 @@ function total() {
   return total;
 }
 
-//try i in place of cartobjobjkeys
 function removeFromCart(item) {
-  for (var i = 0;i< cart.length;i++){
-    var cartobj = cart[i]
-    var objkeys = Object.keys(cartobj)[0]
-    if (item == objkeys){
-     cart.splice(i,1)
-
+// write your code here
+let cartItem = false
+for(let i = 0; i < cart.length; i++){
+  if(cart[i].itemName === item){
+    cartItem = true
+    cart.splice(i, 1)
     }
-
-}
-  console.log(`That item is not in your cart.`)
-
+  }
+  if (!cartItem){
+    return 'That item is not in your cart.'
+  }
 return cart
 }
 
