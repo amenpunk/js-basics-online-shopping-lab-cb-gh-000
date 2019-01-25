@@ -10,7 +10,10 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-    cart[item] = Math.random();
+    var min = 1;
+    var max = 100;
+
+    cart[item] = Math.round(Math.random() * (max - min) + min);
 }
 
 function viewCart() {
