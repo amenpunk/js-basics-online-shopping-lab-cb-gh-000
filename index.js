@@ -19,24 +19,28 @@ function addToCart(item) {
 }
 
 function viewCart() {
-   if(!cart.length){
+  // write your code here
+  console.log("cart is ", cart);
+  if (!cart.length) {
     return "Your shopping cart is empty.";
-   }
-   else{
-        for (let i = 0; i < cart.length; i++){
-          if(i === 1){
-            return `In your cart, you have ${cart[i].itemName} at ${cart[i].itemPrice}.`
-            }
-          else if (i == 2) {
-            return `In your cart, you have ${cart[i-1].itemName} at ${cart[i-1].itemPrice}, and ${cart[i].itemName} batter at ${cart[i].itemName}.`
-          }
-          else if (i >= 3) {
-            return `In your cart, you have ${cart[i-2].itemName} at ${cart[i-2].itemPrice}, ${cart[i-1].itemName} batter at ${cart[i-1].itemPrice}, and ${cart[i].itemName} at ${cart[i].itemPrice}`
-          }
-       }
-   }
-
-
+  } else {
+    
+    let items = "";
+    let lastString = `In your cart, you have`;
+    for (let i = 0; i < cart.length; i++) {
+      let currentItem = cart[i].itemName;
+      let currentPrice = cart[i].itemPrice;
+      if (i === cart.length -1) {
+        lastString = `${lastString} ${currentItem} at $${currentPrice}.`;
+      } else if (i === cart.length -2) {
+        lastString = `${lastString} ${currentItem} at $${currentPrice}, and`;
+      } else {
+        lastString = `${lastString} ${currentItem} at $${currentPrice},`;
+      }
+} 
+items = lastString;
+return items;
+}
 }
 
 function total() {
