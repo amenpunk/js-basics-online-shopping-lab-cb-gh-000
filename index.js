@@ -52,13 +52,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
+
    for( var i = 1; i < cart.length; i++){
    if (!itemsInCart) {
       return `That item is not in your cart.`;
     }
    else ( cart[i].itemName === item) {
-    console.log("index item" + cart[i].itemName)
+   
      var nuevo = cart.splice(i, 1);
      return nuevo;
    }
