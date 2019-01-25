@@ -33,7 +33,7 @@ function viewCart() {
             return `In your cart, you have ${cart[i-1].itemName} at ${cart[i-1].itemPrice}, and ${cart[i].itemName} batter at ${cart[i].itemName}.`
           }
           else if (i >= 3) {
-            return `In your cart, you have ${cart[i].itemName} at $17, pancake batter at $5, and eggs at $49`
+            return `In your cart, you have ${cart[i-2].itemName} at ${cart[i-2].itemPrice}, ${cart[i-1].itemName} batter at ${cart[i-1].itemPrice}, and ${cart[i].itemName} at ${cart[i].itemPrice}`
           }
        }
    }
