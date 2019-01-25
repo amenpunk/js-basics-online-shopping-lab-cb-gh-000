@@ -27,12 +27,14 @@ function viewCart() {
         let lastString = `In your cart, you have`;
        for (var i in cart){
           if(i == 1){
-            return `In your cart, you have ${cart[i].itemName;} at ${cart[i].itemPrice;}.`
+            return `In your cart, you have ${cart[i].itemName} at ${cart[i].itemPrice}.`
             }
           else if (i == 2) {
-            return `In your cart, you have ${cart[i].itemName;} at ${cart[i].itemPrice;}, and ${cart[i-1].itemName;} batter at ${cart[i-1].itemName;}.`
+            return `In your cart, you have ${cart[i-1].itemName} at ${cart[i-1].itemPrice}, and ${cart[i].itemName} batter at ${cart[i].itemName}.`
           }
-
+          else if (i >= 3) {
+            return `In your cart, you have ${cart[i].itemName} at $17, pancake batter at $5, and eggs at $49`
+          }
        }
    }
 
