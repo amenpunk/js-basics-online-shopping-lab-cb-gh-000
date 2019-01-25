@@ -55,11 +55,12 @@ function removeFromCart(item) {
    for( var i = 1; i < cart.length; i++){
    if ( cart[i].itemName === item) {
      var nuevo = cart.splice(i, 1);
+     return nuevo;
    }
    else{
     return "That item is not in your cart.";
    }
-  return cart;
+
 }
 
 }
