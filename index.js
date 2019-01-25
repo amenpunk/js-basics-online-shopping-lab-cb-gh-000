@@ -52,17 +52,19 @@ function total() {
 }
 
 function removeFromCart(item) {
-    var alerts =  "That item is not in your cart."
-    console.log("item to remove: " + item)
-   for( var i = 0; i < cart.length; i++){
-   if ( cart[i].itemName === item) {
-     console.log("index item" + cart[i].itemName)
-     var nuevo = cart.splice(i, 1);
-     return nuevo;
-   }
-   else{
-    return alerts;
-   }
+    res = false
+    for(let x = 0; x < cart.length;x++){
+        if(cart[i].itemName == item ){
+            res = true
+            delete cart[i];
+        }
+    }
+    if(res = false){
+      return "That item is not in your cart.";
+    }
+    else {
+      return cart;
+    }
 
 }
 
