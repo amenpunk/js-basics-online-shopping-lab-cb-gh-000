@@ -52,8 +52,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-    var alerts =  "That item is not in your cart."
-    console.log("item to remove: " + item)
+  
    for( var i = 1; i < cart.length; i++){
    if (!itemsInCart) {
       return `That item is not in your cart.`;
