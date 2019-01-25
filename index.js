@@ -12,7 +12,9 @@ function setCart(c) {
 function addToCart(item) {
     var min = 1;
     var max = 100;
-    cart.item = Math.round(Math.random() * (max - min) + min);
+    var price =  Math.round(Math.random() * (max - min) + min);
+    let products = {"itemName" : item, "itemPrice" : itemPrice};
+    cart.push(products)
     return `${item} has been added to your cart.`;
 }
 
