@@ -19,9 +19,17 @@ function addToCart(item) {
 }
 
 function viewCart() {
-   for(var x =0; x < cart.lenght();x++){
-      
-    }
+   if(!cart.length){
+    return "Your shopping cart is empty.";
+   }
+   else{
+       for (var i in cart){
+           let currentItem = cart[i].itemName;
+           let currentPrice = cart[i].itemPrice;
+       }
+   }
+  
+  
 }
 
 function total() {
