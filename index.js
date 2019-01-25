@@ -29,9 +29,17 @@ function viewCart() {
            let currentItem = cart[i].itemName;
            let currentPrice = cart[i].itemPrice;
 
-            if(i = 1){
-
-            }
+            if (i === cart.length -1) {
+        lastString = `${lastString} ${currentItem} at $${currentPrice}.`;
+      } else if (i === cart.length -2) {
+        lastString = `${lastString} ${currentItem} at $${currentPrice}, and`;
+      } else {
+        lastString = `${lastString} ${currentItem} at $${currentPrice},`;
+      }
+} 
+items = lastString;
+return items;
+}
        }
    }
 
