@@ -30,7 +30,7 @@ function viewCart() {
            let currentPrice = cart[i].itemPrice;
 
             if(i = 1){
-  
+
             }
        }
    }
