@@ -31,7 +31,7 @@ function viewCart() {
           if (i === cart.length -1) {
         lastString = `${lastString} ${currentItem} at $${currentPrice}.`;
       } else if (i === cart.length -2) {
-        lastString = `${lastString} ${currentItem} at $${currentPrice}, and`;
+        lastString = `${lastString} ${currentItem} at $${currentPrice},`;
       } else {
         lastString = `${lastString} ${currentItem} at $${currentPrice},`;
       }
@@ -40,7 +40,7 @@ items = lastString;
 return items;
 
 
-      
+
    }
 
 
