@@ -52,22 +52,19 @@ function total() {
 }
 
 function removeFromCart(item) {
-    var res = false
-    for(let i = 0; i < cart.length;i++){
-        if(cart[i].itemName == item ){
-            res = true
-            delete cart[i];
-        }
-    }
-    if(res = false){
-      return "That item is not in your cart.";
-    }
-    else {
-      return cart;
-    }
+  // write your code here	  for (var i = 0;i< cart.length;i++){
+    var cartobj = cart[i]
+    var objkeys = Object.keys(cartobj)[0]
+    if (item == objkeys){
+     cart.splice(i,1)
 
-}
+     }
 
+ }
+  console.log(`That item is not in your cart.`)
+
+ return cart
+}	}
 
 
 function placeOrder(cardNumber) {
