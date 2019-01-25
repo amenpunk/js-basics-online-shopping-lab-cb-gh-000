@@ -31,7 +31,7 @@ function viewCart() {
           if(i == cart.length){
             return `In your cart, you have ${currentItem} at ${currentPrice}.`
             }
-            
+
        }
    }
 
