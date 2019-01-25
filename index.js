@@ -28,8 +28,8 @@ function viewCart() {
            let currentPrice = cart[i].itemPrice;
        }
    }
-  
-  
+
+
 }
 
 function total() {
