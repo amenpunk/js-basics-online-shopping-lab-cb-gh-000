@@ -24,13 +24,13 @@ function viewCart() {
    }
    else{
         for (let i = 0; i < cart.length; i++){
-          if(i == 0){
+          if(i === 1){
             return `In your cart, you have ${cart[i].itemName} at ${cart[i].itemPrice}.`
             }
-          else if (i == 1) {
+          else if (i == 2) {
             return `In your cart, you have ${cart[i-1].itemName} at ${cart[i-1].itemPrice}, and ${cart[i].itemName} batter at ${cart[i].itemName}.`
           }
-          else if (i >= 2) {
+          else if (i >= 3) {
             return `In your cart, you have ${cart[i-2].itemName} at ${cart[i-2].itemPrice}, ${cart[i-1].itemName} batter at ${cart[i-1].itemPrice}, and ${cart[i].itemName} at ${cart[i].itemPrice}`
           }
        }
