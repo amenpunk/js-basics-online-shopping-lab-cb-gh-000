@@ -60,7 +60,7 @@ function removeFromCart(item) {
      var nuevo = cart.splice(i, 1);
      return nuevo;
    }
-   else{
+   else(!cart[i].itemName){
     return alerts;
    }
 
