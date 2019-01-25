@@ -50,16 +50,17 @@ function total() {
   }
   return total;
 }
+
 function removeFromCart(item) {
   // write your code here
   let itemsInCart = false;
     if (!itemsInCart) {
       return `That item is not in your cart.`;
-    } 
+    }
     const valueToRemove = item;
     const filteredItems = cart.filter(function(x) {
     return x !== valueToRemove;
-} 
+}
 }
 }
 
